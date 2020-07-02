@@ -1,5 +1,5 @@
 # Program to check Armstrong numbers in a certain interval
-
+# Armstong program
 lower = 100
 upper = 2000
 
