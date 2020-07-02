@@ -1,8 +1,8 @@
 # Program to check Armstrong numbers in a certain interval
 # Armstong program
 # Numbers
-lower = 100
-upper = 2000
+lower = 2000
+upper = 30000
 
 for num in range(lower, upper + 1):
 
