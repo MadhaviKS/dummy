@@ -1,22 +1,17 @@
-# Program to check Armstrong numbers in a certain interval
-# Armstong program
-# Numbers
-lower = 2000
-upper = 30000
+# Python program to check if year is a leap year or not
 
-for num in range(lower, upper + 1):
+year = 2000
 
-   # order of number
-   order = len(str(num))
-    
-   # initialize sum
-   sum = 0
+# To get year (integer input) from the user
+# year = int(input("Enter a year: "))
 
-   temp = num
-   while temp > 0:
-       digit = temp % 10
-       sum += digit ** order
-       temp //= 10
-
-   if num == sum:
-       print(num)
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
